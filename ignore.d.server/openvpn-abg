@@ -31,4 +31,4 @@
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: soft reset sec=\int bytes=\int/\int pkts=\int/\int$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: tls_process: killed expiring key$
 \header{(openvpn|ovpn-\name)} Socket Buffers: R=\[\int->\int\] S=\[\int->\int\]
-\header{(openvpn|ovpn-\name)} \ipaddr:\int Bad encapsulated packet length from peer \(\int\), which must be > 0 and <= \int -- please ensure that --tun-mtu or --link-mtu is equal on both peers -- this condition could also indicate a possible active attack on the TCP link -- \[Attempting restart\.\.\.\]
+\header{(openvpn|ovpn-\name)} \ipaddr:\int WARNING: Bad encapsulated packet length from peer \(\int\), which must be > 0 and <= \int -- please ensure that --tun-mtu or --link-mtu is equal on both peers -- this condition could also indicate a possible active attack on the TCP link -- \[Attempting restart\.\.\.\]
