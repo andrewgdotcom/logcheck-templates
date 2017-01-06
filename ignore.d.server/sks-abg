@@ -17,6 +17,7 @@
 \header{sks} \isodt No results for request \(GET /pks/lookup\?.+\): No keys found$
 \header{sks} \isodt Handling /pks/add for \int keys$
 \header{sks} \isodt /pks/add: key [[:xdigit:]]{32} added to database$
+
 \comment{The following is hard coded for Kristian's hourly test}
 \header{sks} \isodt Error handling request \(POST,/pks/add,\[
 \header{sks} accept:\*/\*
@@ -28,4 +29,4 @@
 \header{sks} via:1.1 \ipaddr
 \header{sks} x-forwarded-for:37.191.238.78
 \header{sks} x-forwarded-host:pool.sks-keyservers.net
-\header{sks} x-forwarded-server:\ipaddr\]): Failure\("Error while decoding ascii-armored key: text terminated before beginning of ascii block"\)
+\header{sks} x-forwarded-server:\ipaddr\]\): Failure\("Error while decoding ascii-armored key: text terminated before beginning of ascii block"\)
