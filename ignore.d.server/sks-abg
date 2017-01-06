@@ -3,7 +3,7 @@
 \header{sks} \isodt (<(reconciliation handler|recon as client)> error in callback\.|Error getting missing keys): (End_of_file|Unix error: (No route to host|Connection timed out|Connection refused) - connect\(\)|Sys_error\("Connection reset by peer"\))$
 \header{sks} \isodt \int hashes recovered from <ADDR_INET \[\ipaddr\]:\int>$
 \header{sks} \isodt #[[:xdigit:]]{35}$
-\header{sks} \isodt Requesting [[:digit:]]+ missing keys from <ADDR_INET \[\ipaddr\]:\int>, starting with [[:xdigit:]]{32}$
+\header{sks} \isodt Requesting \int missing keys from <ADDR_INET \[\ipaddr\]:\int>, starting with [[:xdigit:]]{32}$
 \header{sks} \isodt \int keys (found|received)$
 \header{sks} \isodt Applying \int changes$
 \header{sks} \isodt Reconciliation attempt from <ADDR_INET \[\ipaddr\]:\int> while gossip disabled\. Ignoring\.$

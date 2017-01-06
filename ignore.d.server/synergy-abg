@@ -1,1 +1,1 @@
-\header{Synergy 1\.4\.16} .*$
+\header{Synergy 1\.4\.16} .+$

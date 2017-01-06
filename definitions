@@ -8,7 +8,7 @@
 
 \comment{\email is a sloppy match for common addresses, but is not watertight}
 \comment{It can also match other things such as Message-ID etc.}
-\define{email}{[._=+[:alnum:]-]+@@(\name|\[\ipaddr\])}
+\define{email}{[!#$%^&*~`?{}|._=/+'[:alnum:]-]+@@(\name|\[\ipaddr\])}
 
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}

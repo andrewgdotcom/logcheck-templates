@@ -3,4 +3,3 @@
 \header{(spamd|check|re(port|voke))}( spamd:)? result: (Y|N|\.) \sint - .*$
 \header{(spamd|check|re(port|voke))}( spamd:)? prefork: adjust: \int idle children (less|more) than \int m(ax|in)imum idle children. (In|De)creasing spamd children: \int (started|killed)$
 \header{(spamd|check|re(port|voke))}( spamd:)? handled cleanup of child pid \[\int\] due to SIGCHLD: interrupted, signal 2 \(0002\)$
-

@@ -4,6 +4,5 @@
 \header{sshd} (fatal: )?(Read from socket|Write) failed: Connection reset by peer \[preauth\]$
 \header{sshd} Disconnecting: Too many authentication failures for (invalid user )?\name from \ipaddr port \int ssh2 \[preauth\]$
 \header{sshd} (error: )?Received disconnect from \ipaddr: \int: (ok|User request)? \[preauth\]$
-6a7,8
 \header{sshd} Bad protocol version identification '[^']*' from \ipaddr port \int$
 \header{sshd} (fatal: )?no matching cipher found: client [^ ]+ server [^ ]+ \[preauth\]$

@@ -14,9 +14,9 @@
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: Initial packet from (\[AF_INET\])?\ipaddr:\int, sid=\hex \hex$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Peer Connection Initiated with (\[AF_INET\])?\ipaddr:\int$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? VERIFY OK: depth=\int, .+$
-\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Control Channel: TLSv1, cipher TLSv1/SSLv3 \name, \int bit RSA$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Control Channel: TLSv\version, cipher TLSv\version(/SSLv3)? \name, \int bit RSA$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel (En|De)crypt: Cipher '\name' initialized with \int bit key$
-\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel (En|De)crypt: Using \int bit message hash 'SHA1' for HMAC authentication$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel (En|De)crypt: Using \int bit message hash 'SHA\int' for HMAC authentication$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: Learn: \ipaddr -> \name/\ipaddr:\int$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: primary virtual IP(v6)? for \name/\ipaddr:\int: \ipaddr$
