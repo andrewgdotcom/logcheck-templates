@@ -11,3 +11,6 @@ for dir in *; do
   fi
 done
 
+echo "Testing..."
+sudo -u logcheck logcheck -o -t
+
