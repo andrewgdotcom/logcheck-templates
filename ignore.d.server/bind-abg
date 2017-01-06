@@ -1,4 +1,4 @@
 \header{named} client \ipaddr#\int( \(\name\))?: query( \(cache\))? '\name/[A-Z]+/(CH|IN)' denied$
 \header{named} client \ipaddr#\int( \(\name\))?: transfer of '\name/IN': IXFR ended$
 \header{named} zone \name/IN \(signed\): reconfiguring zone keys$
-\header{named} zone \name/IN \(signed\): next key event: [[:digit:]]{2}-[[:alnum:]]{3}-[[:digit:]]{4} \isotime\.\int$
+\header{named} zone \name/IN \(signed\): next key event: \dateword \isotime\.\int$
