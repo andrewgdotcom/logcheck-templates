@@ -1,0 +1,1 @@
+\header{postfix-policyd} rcpt=\int, greylist=(new|abuse|update), host=\name \(\name\), from=[^[:space:]]+, to=[^[:space:]]+, size=[/[:digit:]]+$

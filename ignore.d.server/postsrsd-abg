@@ -1,0 +1,2 @@
+\header{postsrsd} srs_(reverse|forward): <\email> rewritten as <\email>$
+\header{postsrsd} srs_(reverse|forward): <.+> not rewritten: No at sign in sender address$

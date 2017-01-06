@@ -1,0 +1,19 @@
+\header{sks} getaddrinfo\*\.gaih_getanswer: got type "DNAME"$
+\header{sks} \isodt <recon as client> callback timed out\.$
+\header{sks} \isodt (<(reconciliation handler|recon as client)> error in callback\.|Error getting missing keys): (End_of_file|Unix error: (No route to host|Connection timed out|Connection refused) - connect\(\)|Sys_error\("Connection reset by peer"\))$
+\header{sks} \isodt \int hashes recovered from <ADDR_INET \[\ipaddr\]:\int>$
+\header{sks} \isodt #[[:xdigit:]]{35}$
+\header{sks} \isodt Requesting [[:digit:]]+ missing keys from <ADDR_INET \[\ipaddr\]:\int>, starting with [[:xdigit:]]{32}$
+\header{sks} \isodt \int keys (found|received)$
+\header{sks} \isodt Applying \int changes$
+\header{sks} \isodt Reconciliation attempt from <ADDR_INET \[\ipaddr\]:\int> while gossip disabled\. Ignoring\.$
+\header{sks} \isodt Sending LogResp size \int+$
+\header{sks} \isodt Added \int hash-updates\. Caught up to \decimal$
+\header{sks} \isodt (Adding|Del'ng) hash [[:xdigit:]]{32}$
+\header{sks} \isodt Checkpointing (database|complete)$
+\header{sks} \isodt (Done c|C)alculating DB stats$
+\header{sks} \isodt Error fetching key from hash [[:xdigit:]]{32}: Not_found$
+\header{sks} \isodt Page not found: /pks/lookup/undefined1%3CScRiPt%3Eprompt\(('|%22)CVE-2014-3207('|%22)\)%3C/ScRiPt%3E$
+\header{sks} \isodt No results for request \(GET /pks/lookup\?.+\): No keys found$
+\header{sks} \isodt Handling /pks/add for \int keys$
+\header{sks} \isodt /pks/add: key [[:xdigit:]]{32} added to database$

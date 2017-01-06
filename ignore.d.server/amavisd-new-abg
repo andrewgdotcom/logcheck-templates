@@ -1,0 +1,1 @@
+\header{amavis} \([-[:digit:]]+\) Passed CLEAN,( \[\ipaddr\]){0,2} <[^>]*> -> <[^>]*>(,<[^>]*>)*, Message-ID: <[^>]+>( \((added by[^)]+|sfid-[_[:xdigit:]]+)\))?,( Resent-Message-ID: <[^>]+>,)? mail_id: [-+[:alnum:]]+, Hits: (-[.[:digit:]]*)+,( size: \int,)? queued_as: \hex, \int ms$

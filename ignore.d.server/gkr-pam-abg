@@ -1,0 +1,1 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ [._[:alnum:]-]+\]?\[[0-9]+\]: gkr-pam: unlocked login keyring$

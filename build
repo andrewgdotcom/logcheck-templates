@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /etc/logcheck/templates
+
+for dir in *; do
+  if [[ -d $dir ]]; then
+    for file in $dir/*; do
+	file=$(basename $file)
+	cat definitions $dir/$file |gpp -T|perl -ne 'print if /./' > ../$dir/$file
+    done
+  fi
+done
+

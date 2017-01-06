@@ -1,0 +1,15 @@
+\define{ipaddr}{[:[:xdigit:].]@{3,39@}}
+\define{name}{[._[:alnum:]-]+}
+\define{path}{[._/[:alnum:]-]+}
+\define{email}{[._=+[:alnum:]-]+@@\name}
+\define{int}{[[:digit:]]+}
+\define{sint}{[+-]?\int}
+\define{decimal}{\int\.\int}
+\define{sdecimal}{[+-]?\decimal}
+\define{version}{[.[:digit:]]+}
+\define{hex}{[[:xdigit:]]+}
+\define{isodate}{[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}}
+\define{isotime}{[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}}
+\define{isodt}{\isodate[ T]\isotime(Z|[+-][[:digit:]]{2}:[[:digit:]]{2})?}
+\define{dtstamp}{\w@{3@} [ :[:digit:]]@{11@}}
+\define{header}{^\dtstamp \name #1(\[\int\])?:}

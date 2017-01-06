@@ -1,0 +1,33 @@
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr)? Connection reset, restarting \[\sint\]$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? SENT CONTROL \[\name\]: 'PUSH_REPLY,route \ipaddr \ipaddr,(topology \name,)?ping \int,ping-restart \int,ifconfig \ipaddr \ipaddr' \(status=1\)$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? SENT CONTROL \[\name\]: 'PUSH_REPLY,ifconfig-ipv6 \ipaddr(/\int)? \ipaddr,tun-ipv6,route \ipaddr \ipaddr,(topology \name,)?ping \int,ping-restart \int,ifconfig \ipaddr \ipaddr' \(status=1\)$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: multi_create_instance called$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: new connection by client '\name' will cause previous active sessions by this client to be dropped.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect.$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? LZO compression initialized$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Local Options hash \(VER=V4\): '\hex'$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Expected Remote Options hash \(VER=V4\): '\hex'$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TCP connection established with (\[AF_INET\])?\ipaddr:\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TCPv4_SERVER link local: \[undef\]$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TCPv4_SERVER link remote: (\[AF_INET\])?\ipaddr:\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TCP/UDP: Closing socket$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel MTU parms [ L:\int D:\int EF:\int EB:\int ET:\int EL:\int AF:\int/\int \]$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: Initial packet from (\[AF_INET\])?\ipaddr:\int, sid=\hex \hex$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Peer Connection Initiated with (\[AF_INET\])?\ipaddr:\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? VERIFY OK: depth=\int, .+$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Control Channel: TLSv1, cipher TLSv1/SSLv3 \name, \int bit RSA$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel (En|De)crypt: Cipher '\name' initialized with \int bit key$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Data Channel (En|De)crypt: Using \int bit message hash 'SHA1' for HMAC authentication$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS Error: TLS key negotiation failed to occur within 60 seconds \(check your network connectivity\)$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: Learn: \ipaddr -> \name/\ipaddr:\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI: primary virtual IP(v6)? for \name/\ipaddr:\int: \ipaddr$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? PUSH: Received control message: 'PUSH_REQUEST'$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? \[\name\] Inactivity timeout \(--ping-restart\), restarting$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? SIGUSR1\[soft,\name\] received, client-instance restarting$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? Fatal TLS error (check_tls_errors_co), restarting
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)?( read)? TCPv4_SERVER \[\]: No route to host \(code=113\)
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? MULTI_sva: pool returned IPv4=\ipaddr, IPv6=\ipaddr$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? send_push_reply\(\): safe_cap=\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? WARNING: 'tun-ipv6' is present in local config but missing in remote config, local='tun-ipv6'$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: soft reset sec=\int bytes=\int/\int pkts=\int/\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr( \[\name\])?)? TLS: tls_process: killed expiring key$
+\header{(openvpn|ovpn-\name)} Socket Buffers: R=\[\int->\int\] S=\[\int->\int\]

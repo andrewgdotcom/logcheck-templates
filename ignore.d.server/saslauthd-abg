@@ -1,0 +1,2 @@
+\header{saslauthd} pam_unix\(smtp:auth\): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=( [[:space:]]*user=\name)?$
+\header{saslauthd} do_auth[[:space:]]*: auth failure: \[user=\name\] \[service=smtp\] \[realm=\] \[mech=pam\] \[reason=PAM auth error\]$

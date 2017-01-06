@@ -1,0 +1,9 @@
+\header{couriertcpd} LOGIN: ip=\[\ipaddr\], command=(CAPABILITY|AUTHENTICATE|LOGIN|NOOP)$
+\header{couriertcpd} LOGIN: ip=\[\ipaddr\], username=\name$
+\header{couriertcpd} LOGIN, user=\name, ip=\[\ipaddr\], port=\[\int\], protocol=(POP|IMAP)$
+\header{couriertcpd} Connection, ip=\[\ipaddr\]$
+\header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int$
+\header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int, starttls=[01]$
+\header{couriertcpd} (LOGOUT|TIMEOUT|DISCONNECTED), user=\email, ip=\[\ipaddr\], headers=\int, body=\int, rcvd=\int, sent=\int, time=\int$
+\header{couriertcpd} couriertls: accept: Connection (timed out|reset by peer)$
+\header{couriertcpd} couriertls: read: No route to host$

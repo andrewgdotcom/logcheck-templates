@@ -1,0 +1,9 @@
+\header{hts} connection from \ipaddr:\int$
+\header{hts} disconnected from FIXME:hostname:port$
+\header{hts} tunnel_accept: poll timed out$
+\header{hts} tunnel_accept: in_fd = \sint, out_fd = \sint$
+\header{hts} couldn't accept connection: Success$
+\header{hts} read_until: read error: Connection reset by peer$
+\header{hts} http_parse_request: expected an HTTP method$
+\header{hts} couldn't accept connection: Connection reset by peer$
+\header{hts} tunnel_accept: unknown header type$

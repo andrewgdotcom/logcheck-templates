@@ -1,0 +1,2 @@
+\header{systemd-timesyncd} interval/delta/delay/jitter/drift ([+-]?\decimal@s/){4}[+-]?\decimal@ppm$
+\header{systemd} (Start(ing|ed)|Reload(ing|ed) LSB:) .+\.(\.\.)?$

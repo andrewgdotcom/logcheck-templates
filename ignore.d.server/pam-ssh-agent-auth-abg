@@ -1,0 +1,3 @@
+\header{\name} pam_ssh_agent_auth: (Attempting|Failed) Authentication: `\name' as `\name' using \path$
+\header{\name} pam_ssh_agent_auth: Beginning pam_ssh_agent_auth for user \name$
+\header{\name} pam_ssh_agent_auth: No ssh-agent could be contacted$+$
