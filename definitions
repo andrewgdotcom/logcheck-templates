@@ -6,7 +6,7 @@
 \define{sint}{[+-]?\int}
 \define{decimal}{\int(\.\int)?}
 \define{sdecimal}{[+-]?\decimal}
-\define{version}{[.[:digit:]]+}
+\define{version}{\int(\.\int)*}
 \define{hex}{[[:xdigit:]]+}
 \define{isodate}{[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}}
 \define{isotime}{[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}}

@@ -4,5 +4,5 @@
 \header{postfix/anvil} statistics: max connection rate \int/\int@s for \(smtp:unknown\) at \dtstamp$
 \header{postfix/anvil} statistics: max connection count \int for \(smtp:unknown\) at \dtstamp$
 \header{postfix/smtpd} warning: hostname \name does not resolve to address \ipaddr(: Name or service not known)?$
-\header{postfix/smtpd} (Anonymous|Trusted|Untrusted) TLS connection established (to|from) \name\[\ipaddr\]:(\int:)? TLSv\version with cipher \name \(\int bits\)$
+\header{postfix/smtpd} (Anonymous|Trusted|Untrusted) TLS connection established (to|from) \name\[\ipaddr\]:(\int:)? TLSv\version with cipher \name \(\int/\int bits\)$
 \header{postfix/smtpd} SSL_accept error from \name\[\ipaddr\]:(\int:)? lost connection$
