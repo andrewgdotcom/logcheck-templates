@@ -4,7 +4,7 @@
 \define{email}{[._=+[:alnum:]-]+@@\name}
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}
-\define{decimal}{\int\.\int}
+\define{decimal}{\int(\.\int)?}
 \define{sdecimal}{[+-]?\decimal}
 \define{version}{[.[:digit:]]+}
 \define{hex}{[[:xdigit:]]+}
