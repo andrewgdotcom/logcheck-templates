@@ -1,15 +1,36 @@
-\define{ipaddr}{[:[:xdigit:].]@{3,39@}}
+\define{comment}
+\comment{The above simply removes anything within a comment macro}
+
+\comment{\name will cover most fqdns, usernames, services, etc}
 \define{name}{[._[:alnum:]-]+}
 \define{path}{[._/[:alnum:]-]+}
-\define{email}{[._=+[:alnum:]-]+@@\name}
+\define{ipaddr}{[:[:xdigit:].]{3,39}}
+
+\comment{\email is a sloppy match for common addresses, but is not watertight}
+\comment{It can also match other things such as Message-ID etc.}
+\define{email}{[._=+[:alnum:]-]+@@(\name|\[\ipaddr\])}
+
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}
 \define{decimal}{\int(\.\int)?}
 \define{sdecimal}{[+-]?\decimal}
 \define{version}{\int(\.\int)*}
 \define{hex}{[[:xdigit:]]+}
+
+\comment{RFC3339 (ISO) date and time formats}
 \define{isodate}{[[:digit:]]{4}-[[:digit:]]{2}-[[:digit:]]{2}}
-\define{isotime}{[[:digit:]]{2}:[[:digit:]]{2}:[[:digit:]]{2}}
-\define{isodt}{\isodate[ T]\isotime(Z|[+-][[:digit:]]{2}:[[:digit:]]{2})?}
-\define{dtstamp}{\w@{3@} [ :[:digit:]]@{11@}}
-\define{header}{^\dtstamp \name #1(\[\int\])?:}
+\define{isotime}{[[:digit:]]{2}(:[[:digit:]]{2}){1,2}}
+\define{isodt}{\isodate[ tT]\isotime([zZ]|[+-][[:digit:]]{2}:[[:digit:]]{2})?}
+
+\comment{A date in words, e.g. 1 Jan 1970}
+\define{dateword}{[[:digit:]]{1,2} \w@{3@} [[:digit:]]{4}}
+
+\comment{email uses its own timestamps, RFC2822}
+\define{emaildt}{(\w@{3@}, )? ?\dateword \isotime [+-][[:digit:]]{4}( \(\w@{3,5@}\))?}
+
+\comment{syslog uses its own timestamps}
+\define{dtstamp}{\w@{3@} [ :[:digit:]]{11}}
+
+\comment{And finally, a shorthand for syslog's standard boilerplate}
+\define{syslog}{^\dtstamp \name #1(\[\int\])?:}
+\define{header}{\syslog{#1}}

@@ -17,3 +17,15 @@
 \header{sks} \isodt No results for request \(GET /pks/lookup\?.+\): No keys found$
 \header{sks} \isodt Handling /pks/add for \int keys$
 \header{sks} \isodt /pks/add: key [[:xdigit:]]{32} added to database$
+\comment{The following is hard coded for Kristian's hourly test}
+\header{sks} \isodt Error handling request \(POST,/pks/add,\[
+\header{sks} accept:\*/\*
+\header{sks} connection:close
+\header{sks} content-length:82
+\header{sks} content-type:application/x-www-form-urlencoded
+\header{sks} expect:100-continue
+\header{sks} host:\ipaddr:11371
+\header{sks} via:1.1 \ipaddr
+\header{sks} x-forwarded-for:37.191.238.78
+\header{sks} x-forwarded-host:pool.sks-keyservers.net
+\header{sks} x-forwarded-server:\ipaddr\]): Failure\("Error while decoding ascii-armored key: text terminated before beginning of ascii block"\)
