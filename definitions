@@ -1,5 +1,11 @@
 \define{comment}
-\comment{The above simply removes anything within a comment macro}
+\comment{Comment macros expand to the null string}
+
+\comment{Undefined macros expand to themselves, but eat anything that looks like an argument}
+\comment{You must escape any character classes that are modified by {}, e.g. @\w{3}}
+
+\comment{Macro expansions are not encapsulated in the resulting regex, so (*+?{}) will not behave as you expect}
+\comment{To use a modifier on a macro, be sure to always enclose it in () first}
 
 \comment{\name will cover most fqdns, usernames, services, etc}
 \define{name}{[._[:alnum:]-]+}
@@ -28,6 +34,9 @@
 \comment{A date in MM/DD/YYYY format. Also matches DD/MM/YYYY, DD/MM/YY, M/D/YY etc}
 \define{usdate}{[[:digit:]]{1,2}/[[:digit:]]{1,2}/[[:digit:]]{2}([[:digit:]]{2})?}
 
+\comment{A date in whatever format}
+\define{date}{(\isodate|\usdate|\dateword)}
+
 \comment{email uses its own timestamps, RFC2822}
 \define{emaildt}{(@\w{3}, )? ?\dateword \isotime [+-][[:digit:]]{4}( \(@\w{3,5}\))?}
 
@@ -39,5 +48,6 @@
 \define{syslog}{^\syslogdt \name #1(\[\int\])?:}
 \define{header}{\syslog{#1}}
 
-\comment{A list with a delimiting character. Delimiter is #1 (because it is usually smaller)}
+\comment{A non-empty list. Delimiter is #1 (for readability; we expect it to be shorter)}
+\comment{For a possibly-empty list, use (\list{}{})?}
 \define{\list}{#2(#1#2)*}
