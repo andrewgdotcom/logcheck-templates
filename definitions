@@ -8,7 +8,7 @@
 
 \comment{\email is a sloppy match for common addresses, but is not watertight}
 \comment{It can also match other things such as Message-ID etc.}
-\define{email}{("[^\\"]+"|([!#$%^&*~`?{}|._=/+'[:alnum:]-]|\\.)+)@@(\name|\[(IPv6:)?\ipaddr\])}
+\define{email}{(("[^\\"]+"|[!#$%^&*~`?{}|._=/+'[:alnum:]-]|\\.)+)@@(\name|\[(IPv6:)?\ipaddr\])}
 
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}
@@ -38,3 +38,6 @@
 \comment{And finally, a shorthand for syslog's standard boilerplate}
 \define{syslog}{^\syslogdt \name #1(\[\int\])?:}
 \define{header}{\syslog{#1}}
+
+\comment{A list with a delimiting character. Delimiter is #1 (because it is usually smaller)}
+\define{\list}{#2(#1#2)*}
