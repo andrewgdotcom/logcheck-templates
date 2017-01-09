@@ -2,6 +2,8 @@
 \header{opendkim} \hex: failed to parse Authentication-Results: header$
 \header{opendkim} \hex: syntax error: missing parameter\(s\) in signature data$
 \header{opendkim} \hex: can't parse From: header value '[^']+'$
+\header{opendkim} \hex: can't determine message sender; accepting$
 \header{opendkim} \hex: s=\name d=\name SSL$
 \header{opendkim} \hex: s=\name d=\name SSL error:\int:rsa routines:(INT_RSA_VERIFY:bad signature|RSA_padding_check_PKCS1_type_1:.*|ASN1_D2I_READ_BIO:not enough data)$
 \header{opendkim} \hex: bad signature data$
+\header{opendkim} \hex: key retrieval failed \(s=\name, d=\name\): '\name' reply was unresolved CNAME$

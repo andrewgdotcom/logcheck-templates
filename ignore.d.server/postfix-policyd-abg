@@ -1,1 +1,6 @@
 \header{postfix-policyd} rcpt=\int, greylist=(new|abuse|update), host=\name \(\name\), from=[^[:space:]]+, to=[^[:space:]]+, size=[/[:digit:]]+$
+\header{cleanup} clean up process starting: policyd v\version$
+\header{cleanup} connecting to mysql database: \name$
+\header{cleanup} connected\.\.$
+\header{cleanup} expiring (un)?validated records older than \int days (\int)$
+\header{cleanup} expired: \int records$

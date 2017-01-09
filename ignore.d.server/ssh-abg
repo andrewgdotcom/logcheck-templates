@@ -1,8 +1,8 @@
 \header{sshd} error: PAM: User not known to the underlying authentication module for illegal user \name from \name$
 \header{sshd} warning: /etc/hosts.allow, line \int: can't verify hostname: getaddrinfo\(\name, AF_INET\) failed$
-\header{sshd} Received disconnect from \name: \int: com.jcraft.jsch.JSchException: Auth cancel \[preauth\]$
 \header{sshd} (fatal: )?(Read from socket|Write) failed: Connection reset by peer \[preauth\]$
 \header{sshd} Disconnecting: Too many authentication failures for (invalid user )?\name from \ipaddr port \int ssh2 \[preauth\]$
-\header{sshd} (error: )?Received disconnect from \ipaddr: \int: (ok|User request)? \[preauth\]$
+\header{sshd} (error: )?Received disconnect from (\ipaddr|\name): \int: (ok|User request|com\.jcraft\.jsch\.JSchException: Auth cancel)? \[preauth\]$
 \header{sshd} Bad protocol version identification '[^']*' from \ipaddr port \int$
 \header{sshd} (fatal: )?no matching cipher found: client [^ ]+ server [^ ]+ \[preauth\]$
+\header{sshd} (fatal: )?no hostkey alg \[preauth\]$
