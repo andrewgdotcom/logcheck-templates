@@ -34,16 +34,17 @@
 
 \comment{The following covers various other common errors}
 \header{sks} \isodt Error handling request \(GET,/pks/lookup\?.*,\[$
-\header{sks} accept:\list{, *}{(\name|\*)/(\name|\*)(;q=\version)?}$
-\header{sks} accept-encoding:\list{, *}{(\name|\*)/(\name|\*)(;q=\version)?}$
-\header{sks} accept-language:\list{, *}{(\name|\*)/(\name|\*)(;q=\version)?}$
+\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
+\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
+\header{sks} accept-language:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
 \header{sks} referer:https?://\name/?$
 \header{sks} origin:https?://\name/?$
-\header{sks} cache-control:max-age=\int$
+\header{sks} (pragma|cache-control):(no-cache|max-age=\int)$
 \header{sks} content-length: \int$
 \header{sks} upgrade-insecure-requests:1$
 \header{sks} user-agent:.*$
-\header{sks} x-forwarded-for:\ipaddr$
+\header{sks} via:\version \name \(\name/\version\), \version \ipaddr:\int$
+\header{sks} x-forwarded-for:\list{, *}{\ipaddr}$
 \header{sks} x-forwarded-host:\name$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Too many responses"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Insufficiently specific words"\)$

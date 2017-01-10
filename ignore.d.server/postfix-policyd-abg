@@ -2,5 +2,5 @@
 \header{cleanup} clean up process starting: policyd v\version$
 \header{cleanup} connecting to mysql database: \name$
 \header{cleanup} connected\.\.$
-\header{cleanup} expiring (un)?validated records older than \int days (\int)$
+\header{cleanup} expiring (un)?validated records older than \int days \(\int\)$
 \header{cleanup} expired: \int records$

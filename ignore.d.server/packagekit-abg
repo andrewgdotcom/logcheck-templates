@@ -1,1 +1,1 @@
-\header{PackageKit} get-updates transaction /\int_\hex from uid \int finished with success after \int@ms$
+\header{PackageKit} get-updates transaction /\int@_\hex from uid \int finished with success after \int@ms$
