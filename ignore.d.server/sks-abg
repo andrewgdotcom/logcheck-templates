@@ -18,6 +18,7 @@
 \header{sks} \isodt Handling /pks/add for \int keys$
 \header{sks} \isodt /pks/add: key [[:xdigit:]]{32} added to database$
 \header{sks} \isodt get_missing_keys terminated by timeout$
+\header{sks} \isodt (add_keys_merge:Key addition) failed: Eventloop\.SigAlarm$
 
 \comment{The following is hard coded for Kristian's hourly test}
 \header{sks} \isodt Error handling request \(POST,/pks/add,\[
@@ -34,16 +35,16 @@
 
 \comment{The following covers various other common errors}
 \header{sks} \isodt Error handling request \(GET,/pks/lookup\?.*,\[$
-\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
-\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
-\header{sks} accept-language:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\version)?}$
+\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
+\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
+\header{sks} accept-language:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
 \header{sks} referer:https?://\name/?$
 \header{sks} origin:https?://\name/?$
 \header{sks} (pragma|cache-control):(no-cache|max-age=\int)$
 \header{sks} content-length: \int$
 \header{sks} upgrade-insecure-requests:1$
 \header{sks} user-agent:.*$
-\header{sks} via:\version \name \(\name/\version\), \version \ipaddr:\int$
+\header{sks} via:(\version \name \(\name/\version\), )?\version \ipaddr:\int$
 \header{sks} x-forwarded-for:\list{, *}{\ipaddr}$
 \header{sks} x-forwarded-host:\name(:\int)?$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Too many responses"\)$

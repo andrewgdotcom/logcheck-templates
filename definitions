@@ -18,7 +18,7 @@
 
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}
-\define{decimal}{\int(\.\int)?}
+\define{decimal}{(\int(\.\int)?|\.\int)}
 \define{sdecimal}{[+-]?\decimal}
 \define{version}{\int(\.\int)*}
 \define{hex}{[[:xdigit:]]+}
