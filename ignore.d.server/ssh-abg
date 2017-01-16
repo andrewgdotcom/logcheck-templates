@@ -6,3 +6,6 @@
 \header{sshd} Bad protocol version identification '[^']*' from \ipaddr port \int$
 \header{sshd} (fatal: )?no matching cipher found: client [^ ]+ server [^ ]+ \[preauth\]$
 \header{sshd} (fatal: )?no hostkey alg \[preauth\]$
+\header{sshd} Could not write ident string to (\ipaddr|UNKNOWN)$
+\header{sshd} warning: can't get client address: Connection reset by peer$
+\header{sshd} Protocol major versions differ for \ipaddr: .* vs\. .*$

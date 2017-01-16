@@ -7,3 +7,7 @@
 \header{couriertcpd} (LOGOUT|TIMEOUT|DISCONNECTED), user=\email, ip=\[\ipaddr\], headers=\int, body=\int, rcvd=\int, sent=\int, time=\int$
 \header{couriertcpd} couriertls: accept: Connection (timed out|reset by peer)$
 \header{couriertcpd} couriertls: read: No route to host$
+\header{couriertcpd} Maximum connection limit reached for \ipaddr$
+\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL23_GET_CLIENT_HELLO:(unknown protocol|no shared cipher|http request|unsupported)$
+\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL_BYTES_TO_CIPHER_LIST:inappropriate fallback$
+\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL3_READ_BYTES:sslv3 alert bad certificate$
