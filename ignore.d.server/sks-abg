@@ -35,9 +35,9 @@
 
 \comment{The following covers various other common errors}
 \header{sks} \isodt Error handling request \(GET,/pks/lookup\?.*,\[$
-\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
-\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
-\header{sks} accept-language:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
+\header{sks} accept:\list{, +}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
+\header{sks} accept-encoding:\list{, +}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
+\header{sks} accept-language:\list{, +}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
 \header{sks} referer:https?://\name/?$
 \header{sks} origin:https?://\name/?$
 \header{sks} (pragma|cache-control):(no-cache|max-age=\int)$
