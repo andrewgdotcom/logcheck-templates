@@ -45,7 +45,7 @@
 \header{sks} upgrade-insecure-requests:1$
 \header{sks} user-agent:.*$
 \header{sks} via:(\version \name \(\name/\version\), )?\version \ipaddr:\int$
-\header{sks} x-forwarded-for:\list{, *}{\ipaddr}$
+\header{sks} x-forwarded-for:\list{, +}{\ipaddr}$
 \header{sks} x-forwarded-host:\name(:\int)?$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Too many responses"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Insufficiently specific words"\)$
