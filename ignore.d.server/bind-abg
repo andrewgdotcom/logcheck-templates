@@ -3,3 +3,4 @@
 \header{named} zone \name/IN \(signed\): reconfiguring zone keys$
 \header{named} zone \name/IN \(signed\): sending notifies \(serial \int\)$
 \header{named} zone \name/IN \(signed\): next key event: \dateword \isotime\.\int$
+\header{named} received control channel command 'loadkeys \name'$
