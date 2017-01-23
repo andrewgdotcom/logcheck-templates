@@ -6,5 +6,6 @@
 \header{opendkim} \hex: s=\name d=\name SSL$
 \header{opendkim} \hex: s=\name d=\name SSL error:\hex:rsa routines:(INT_RSA_VERIFY:bad signature|RSA_padding_check_PKCS1_type_1:.*|ASN1_D2I_READ_BIO:not enough data)$
 \header{opendkim} \hex: bad signature data$
-\header{opendkim} \hex: key retrieval failed \(s=\name, d=\name\): '\name' (record not found|reply was unresolved CNAME)$
-\header{opendkim} \hex: failed to parse Authentication-Results: header field$
+\header{opendkim} \hex: key retrieval failed \(s=\name, d=\name\)(: '\name' (record not found|reply was unresolved CNAME))?$
+\header{opendkim} \hex: failed to parse [Aa]uthentication-[Rr]esults: header field$
+\header{opendkim} \hex: ADSP query: (multiple DNS replies for '\name'|'\name' unexpected reply class/type (\sint/\sint))$

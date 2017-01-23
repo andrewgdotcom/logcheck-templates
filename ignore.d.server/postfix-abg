@@ -11,3 +11,4 @@
 \header{postfix/smtpd} warning: TLS library problem: error:\hex:SSL routines:SSL3_GET_(RECORD|CLIENT_HELLO):(wrong version number|no shared cipher):s3_srvr.c:\int:$
 \header{postfix/cleanup} warning: \hex: multi-valued sender_canonical_maps entry for \email$
 \header{postfix/cleanup} \hex: message-id=\[string\].*\[/string\]$
+\header{postfix/smtpd} NOQUEUE: reject: MAIL from \name\[\ipaddr\]: 552 5\.3\.4 Message size exceeds fixed limit; proto=ESMTP helo=<\name>$
