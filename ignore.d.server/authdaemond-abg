@@ -1,0 +1,1 @@
+\header{authdaemond} pam_unix\(imap:auth\): authentication failure; logname= uid=0 euid=0 tty= ruser= +rhost= +user=\name$

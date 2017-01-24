@@ -1,0 +1,2 @@
+\header{monit} '\name' process PID changed from \int to \int$
+\header{monit} '\name' process PID has not changed since last cycle$
