@@ -20,6 +20,7 @@
 \header{sks} \isodt get_missing_keys terminated by timeout$
 \header{sks} \isodt (add_keys_merge:Key addition) failed: Eventloop\.SigAlarm$
 \header{sks} \isodt Reconciliation failed\.  Returning elements returned so far: End_of_file$
+\header{sks} \isodt address for \name:\int changed from \[(\list{, *}{<ADDR_INET \[\ipaddr\]:\int>})?\] to \[(\list{, *}{<ADDR_INET \[\ipaddr\]:\int>})?\]$
 
 \comment{The following is hard coded for Kristian's hourly test}
 \header{sks} \isodt Error handling request \(POST,/pks/add,\[
