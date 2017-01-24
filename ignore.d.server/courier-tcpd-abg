@@ -1,4 +1,4 @@
-\header{couriertcpd} LOGIN: ip=\[\ipaddr\], command=(CAPABILITY|AUTHENTICATE|LOGIN|NOOP)$
+\header{couriertcpd} LOGIN: ip=\[\ipaddr\], command=(CAPABILITY|AUTHENTICATE|LOGIN|NOOP|ID|UNKNOWNCMD|LOGOUT)$
 \header{couriertcpd} LOGIN: ip=\[\ipaddr\], username=(\name|\email)$
 \header{couriertcpd} LOGIN, user=\name, ip=\[\ipaddr\], port=\[\int\], protocol=(POP|IMAP)?$
 \header{couriertcpd} LOGIN FAILED, (user=(\name|\email)|method=CRAM-MD5), ip=\[\ipaddr\]$
@@ -6,10 +6,11 @@
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int$
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int, starttls=[01]$
 \header{couriertcpd} (LOGOUT|TIMEOUT|DISCONNECTED), user=\email, ip=\[\ipaddr\], headers=\int, body=\int, rcvd=\int, sent=\int, time=\int$
+\header{couriertcpd} LOGOUT, ip=\[\ipaddr\], command=quit$
 \header{couriertcpd} couriertls: accept: Connection (timed out|reset by peer)$
 \header{couriertcpd} couriertls: read: No route to host$
 \header{couriertcpd} \int active connections \.$
 \header{couriertcpd} Maximum connection limit reached for \ipaddr$
-\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL23_GET_CLIENT_HELLO:(unknown protocol|no shared cipher|http request|unsupported)$
+\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_GET_CLIENT_HELLO:(unknown protocol|no shared cipher|http request|unsupported( protocol)?)$
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL_BYTES_TO_CIPHER_LIST:inappropriate fallback$
-\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL3_READ_BYTES:sslv3 alert bad certificate$
+\header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_READ_BYTES:sslv3 alert bad certificate$
