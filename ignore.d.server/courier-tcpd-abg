@@ -1,7 +1,7 @@
 \header{couriertcpd} LOGIN: ip=\[\ipaddr\], command=(CAPABILITY|AUTHENTICATE|LOGIN|NOOP|ID|UNKNOWNCMD|LOGOUT)$
 \header{couriertcpd} LOGIN: ip=\[\ipaddr\], username=(\name|\email)$
 \header{couriertcpd} LOGIN, user=\name, ip=\[\ipaddr\], port=\[\int\], protocol=(POP|IMAP)?$
-\header{couriertcpd} LOGIN FAILED, (user=(\name|\email)|method=CRAM-MD5), ip=\[\ipaddr\]$
+\header{couriertcpd} LOGIN FAILED, (user=(\name|\email)|method=\name), ip=\[\ipaddr\]$
 \header{couriertcpd} Connection, ip=\[\ipaddr\]$
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int$
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int, starttls=[01]$
