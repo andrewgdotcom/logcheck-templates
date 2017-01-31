@@ -8,4 +8,4 @@
 \header{opendkim} \hex: bad signature data$
 \header{opendkim} \hex: key retrieval failed \(s=\name, d=\name\)(: '\name' (record not found|reply was unresolved CNAME))?$
 \header{opendkim} \hex: failed to parse [Aa]uthentication-[Rr]esults: header field$
-\header{opendkim} \hex: ADSP query: (multiple DNS replies for '\name'|'\name' unexpected reply class/type (\sint/\sint))$
+\header{opendkim} \hex: ADSP query: (multiple DNS replies for '\name'|'\name' unexpected reply class/type \(\sint/\sint\))$
