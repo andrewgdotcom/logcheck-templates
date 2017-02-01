@@ -40,10 +40,10 @@
 \header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(; +q=\decimal)?}$
 \header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
 \header{sks} accept-language:\list{, *}{(\name|\*)(;q=\decimal)?}$
-\header{sks} referer:https?://\name(/.*)?$
-\header{sks} origin:https?://\name(/.*)?$
+\header{sks} referer:https?://\name(:\int)?(/.*)?$
+\header{sks} origin:https?://\name(:\int)?(/.*)?$
 \header{sks} (pragma|cache-control):(no-cache|max-age=\int)$
-\header{sks} content-length: \int$
+\header{sks} content-length:\s*\int$
 \header{sks} upgrade-insecure-requests:1$
 \header{sks} user-agent:.*$
 \header{sks} dnt:.*$

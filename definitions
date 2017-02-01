@@ -8,8 +8,8 @@
 \comment{To use a modifier on a macro, be sure to always enclose it in () first}
 
 \comment{\name will cover most fqdns, usernames, services, etc}
-\define{name}{[._[:alnum:]-]+}
-\define{path}{[._/[:alnum:]-]+}
+\define{name}{[._[:alnum:]+-]+}
+\define{path}{[._/[:alnum:]+-]+}
 \define{ipaddr}{[:[:xdigit:].]{3,39}(%\name)?}
 
 \comment{\email is a sloppy match for common addresses, but is not watertight}

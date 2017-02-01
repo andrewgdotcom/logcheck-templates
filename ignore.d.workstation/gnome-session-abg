@@ -1,0 +1,6 @@
+\header{gnome-session} \(gnome-shell:\int\): mutter-CRITICAL \*\*: \name: assertion '!window->override_redirect' failed$
+\header{gnome-session} Gjs-Message: JS LOG: pushModal: invocation of begin_modal failed$
+\header{gnome-session} Window manager warning: \name \(\int\) is greater than comparison timestamp \(\int\).  This most likely represents a buggy client sending inaccurate timestamps in messages such as _NET_ACTIVE_WINDOW\.  Trying to work around\.\.\.$
+\header{gnome-session} Window manager warning: 0x\hex \(.+\) appears to be one of the offending windows with a timestamp of \int\.  Working around\.\.\.$
+\header{org.gnome.evolution.dataserver.Sources3} \*\* \(evolution-source-registry:\int\): WARNING \*\*: \name: must specify at least one attribute to match$
+\header{gnome-session} \int#011\name#011(ERROR|WARN).*$
