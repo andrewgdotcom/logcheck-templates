@@ -9,7 +9,7 @@
 \header{couriertcpd} LOGOUT, ip=\[\ipaddr\], command=quit$
 \header{couriertcpd} couriertls: accept: Connection (timed out|reset by peer)$
 \header{couriertcpd} couriertls: read: No route to host$
-\header{couriertcpd} \int active connections \.$
+\header{couriertcpd} \int active connections\.$
 \header{couriertcpd} Maximum connection limit reached for \ipaddr$
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_GET_CLIENT_HELLO:(unknown protocol|no shared cipher|http request|unsupported( protocol)?)$
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL_BYTES_TO_CIPHER_LIST:inappropriate fallback$
