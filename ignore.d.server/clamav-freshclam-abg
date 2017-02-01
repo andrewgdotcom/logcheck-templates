@@ -1,2 +1,5 @@
 \header{freshclam} bytecode\.cld (is up to date|updated) \(version: \int, sigs: \int, f-level: \int, builder: \name\)$
 \header{freshclam} Downloading bytecode-\int.cdiff \[100%\] ?$
+\header{freshclam} nonblock_connect: connect timing out \(\int secs\)$
+\comment{The following IP address in the db.local.clamav.net RR, never works}
+\header{freshclam} Can't connect to port 80 of host db.local.clamav.net \(IP: 172.110.204.67\)$

@@ -3,3 +3,8 @@
 \header{(spamd|check|re(port|voke))}( spamd:)? result: (Y|N|\.) \sint - .*$
 \header{(spamd|check|re(port|voke))}( spamd:)? prefork: adjust: \int idle children (less|more) than \int m(ax|in)imum idle children. (In|De)creasing spamd children: \int (started|killed)\.$
 \header{(spamd|check|re(port|voke))}( spamd:)? handled cleanup of child pid \[\int\] due to SIGCHLD: interrupted, signal 2 \(0002\)$
+\header{spamd}( spamd:)? server hit by SIGHUP, restarting$
+\header{spamd}( spamd:)? server started on IO::Socket::IP \[127.0.0.1\]:783, IO::Socket::IP \[::1\]:783 \(running version \version\)$
+\header{spamd}( spamd:)? server socket closed, type IO::Socket::IP$
+\header{spamd}( spamd:)? child \[\int\] killed successfully: interrupted, signal 2 \(0002\)$
+\header{spamassassin\.pid --create-prefs --max-children \int --helper-home-dir}( spamd:)? restarting using '/usr/sbin/spamd -d --pidfile=/var/run/spamassassin\.pid --create-prefs --max-children \int --helper-home-dir'$
