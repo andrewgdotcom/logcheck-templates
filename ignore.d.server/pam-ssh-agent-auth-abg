@@ -1,4 +1,6 @@
 \comment{Note that we need to append "\]?" because gdm-password identifies itself as "gdm-password]". D'oh}
-\header{\name\]?} pam_ssh_agent_auth: (Attempting|Failed) Authentication: `\name' as `\name' using \path$
+\header{\name\]?} pam_ssh_agent_auth: ((Attempting|Failed) Authentication|Authenticated): `\name' as `\name' using \path$
 \header{\name\]?} pam_ssh_agent_auth: Beginning pam_ssh_agent_auth for user \name$
 \header{\name\]?} pam_ssh_agent_auth: No ssh-agent could be contacted$
+\header{\name\]?} pam_ssh_agent_auth: matching key found: file/command \path, line \int$
+\header{\name\]?} pam_ssh_agent_auth: Found matching RSA key: \list{:}{\hex}$
