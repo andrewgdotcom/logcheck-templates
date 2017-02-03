@@ -7,7 +7,7 @@
 \header{sks} \isodt \int keys (found|received)$
 \header{sks} \isodt Applying \int changes$
 \header{sks} \isodt Reconciliation attempt from <ADDR_INET \[\ipaddr\]:\int> while gossip disabled\. Ignoring\.$
-\header{sks} \isodt Sending LogResp size \int+$
+\header{sks} \isodt Sending LogResp size \int$
 \header{sks} \isodt Added \int hash-updates\. Caught up to \decimal$
 \header{sks} \isodt (Adding|Del'ng) hash [[:xdigit:]]{32}$
 \header{sks} \isodt Checkpointing (database|complete)$
@@ -37,9 +37,9 @@
 
 \comment{The following covers various other common errors}
 \header{sks} \isodt Error handling request \(GET,/pks/lookup\?.*,\[$
-\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(; +q=\decimal)?}$
-\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(;q=\decimal)?}$
-\header{sks} accept-language:\list{, *}{(\name|\*)(;q=\decimal)?}$
+\header{sks} accept:\list{, *}{(\name|\*)(/(\name|\*))?(; *q=\decimal)?}$
+\header{sks} accept-encoding:\list{, *}{(\name|\*)(/(\name|\*))?(; *q=\decimal)?}$
+\header{sks} accept-language:\list{, *}{(\name|\*)(; *q=\decimal)?}$
 \header{sks} referer:https?://\name(:\int)?(/.*)?$
 \header{sks} origin:https?://\name(:\int)?(/.*)?$
 \header{sks} (pragma|cache-control):(no-cache|max-age=\int)$
@@ -53,5 +53,5 @@
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Too many responses"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Invalid_argument\("Insufficiently specific words"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): unknown keyid type$
-\header{sks} x-forwarded-server:\ipaddr\]\): Unable to parse hash string: Failure\("char out of range for hex conversion"\)$
+\header{sks} x-forwarded-server:\ipaddr\]\):( Unable to parse hash string:)? Failure\("char out of range for hex conversion"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Failure\("Error while decoding ascii-armored key:  text terminated before reaching PGP public key header line"\)$
