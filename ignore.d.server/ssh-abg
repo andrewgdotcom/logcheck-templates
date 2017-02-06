@@ -9,3 +9,5 @@
 \header{sshd} Could not write ident string to (\ipaddr|UNKNOWN)$
 \header{sshd} warning: can't get client address: Connection reset by peer$
 \header{sshd} Protocol major versions differ for \ipaddr: .* vs\. .*$
+\header{sshd} Bad packet length \int\. \[preauth\]$
+\header{sshd} Disconnecting: Packet corrupt \[preauth\]$

@@ -1,2 +1,2 @@
-\header{denyhosts} Added the following hosts to /etc/hosts\.deny - \ipaddr$
+\header{denyhosts} Added the following hosts to /etc/hosts\.deny - (\name|\ipaddr)$
 \header{denyhosts_ctl.py} starting DenyHosts: +/usr/bin/env python /usr/sbin/denyhosts .*$

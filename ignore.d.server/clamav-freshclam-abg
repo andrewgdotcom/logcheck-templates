@@ -3,3 +3,4 @@
 \header{freshclam} nonblock_connect: connect timing out \(\int secs\)$
 \comment{The following IP address in the db.local.clamav.net RR, never works}
 \header{freshclam} Can't connect to port 80 of host db.local.clamav.net \(IP: 172.110.204.67\)$
+\header{freshclam} Trying \name \(\ipaddr\)\.\.\.$

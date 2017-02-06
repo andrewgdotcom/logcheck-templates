@@ -6,7 +6,7 @@
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int$
 \header{couriertcpd} Disconnected, ip=\[\ipaddr\], time=\int, starttls=[01]$
 \header{couriertcpd} (LOGOUT|TIMEOUT|DISCONNECTED), user=\email, ip=\[\ipaddr\], headers=\int, body=\int, rcvd=\int, sent=\int, time=\int$
-\header{couriertcpd} LOGOUT, ip=\[\ipaddr\], command=quit$
+\header{couriertcpd} LOGOUT, ip=\[\ipaddr\], (rcvd=\int, sent=\int|command=quit)$
 \header{couriertcpd} couriertls: accept: Connection (timed out|reset by peer)$
 \header{couriertcpd} couriertls: read: No route to host$
 \header{couriertcpd} \int active connections\.$

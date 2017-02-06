@@ -1,6 +1,6 @@
 \header{sks} getaddrinfo\*\.gaih_getanswer: got type "DNAME"$
 \header{sks} \isodt <recon as client> callback timed out\.$
-\header{sks} \isodt (<(reconciliation handler|recon as client)> error in callback\.|Error getting missing keys): (End_of_file|Failure\("[^"]+"\)|Unix error: (No route to host|Connection timed out|Connection refused) - connect\(\)|Sys_error\("(Broken pipe|Connection reset by peer)"\))$
+\header{sks} \isodt (<((reconciliation|command) handler|recon as client)> error in callback\.|Error getting missing keys): (End_of_file|Failure\("[^"]+"\)|Unix error: (No route to host|Connection timed out|Connection refused) - connect\(\)|Sys_error\("(Broken pipe|Connection reset by peer)"\))$
 \header{sks} \isodt \int hashes recovered from <ADDR_INET \[\ipaddr\]:\int>$
 \header{sks} \isodt #[[:xdigit:]]{35}$
 \header{sks} \isodt Requesting \int missing keys from <ADDR_INET \[\ipaddr\]:\int>, starting with [[:xdigit:]]{32}$
@@ -55,3 +55,4 @@
 \header{sks} x-forwarded-server:\ipaddr\]\): unknown keyid type$
 \header{sks} x-forwarded-server:\ipaddr\]\):( Unable to parse hash string:)? Failure\("char out of range for hex conversion"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Failure\("Error while decoding ascii-armored key:  text terminated before reaching PGP public key header line"\)$
+\header{sks} x-forwarded-server:\ipaddr\]\): Sys_error\("Connection reset by peer"\)$
