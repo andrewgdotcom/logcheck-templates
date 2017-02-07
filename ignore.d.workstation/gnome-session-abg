@@ -4,3 +4,6 @@
 \header{gnome-session} Window manager warning: 0x\hex \(.+\) appears to be one of the offending windows with a timestamp of \int\.  Working around\.\.\.$
 \header{org.gnome.evolution.dataserver.Sources3} \*\* \(evolution-source-registry:\int\): WARNING \*\*: \name: must specify at least one attribute to match$
 \header{gnome-session} \int#011\name#011(ERROR|WARN).*$
+\header{gnome-session} Gjs-Message: JS LOG: error: Unable to lock: Lock was blocked by an application$
+\header{gnome-session} \(\name:\int\): GLib-CRITICAL \*\*: Source ID \int was not found when attempting to remove it$
+\header{gnome-session} \(\name:\int\): evolution-alarm-notify-WARNING \*\*: alarm\.c:\int: Requested removal of nonexistent alarm!$
