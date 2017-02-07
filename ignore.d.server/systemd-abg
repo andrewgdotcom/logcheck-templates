@@ -1,3 +1,4 @@
 \header{systemd-timesyncd} interval/delta/delay/jitter/drift (\sdecimal@s/){4}\sdecimal@ppm( \(ignored\))?$
 \header{systemd} (St(opp|art)(ing|ed)|Reload(ing|ed)( LSB:)?) .+$
 \header{systemd} PID file \path not readable \(yet\?\) after start\.$
+\header{systemd-logind} New session \int of user \name\.$
