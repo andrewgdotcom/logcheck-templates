@@ -1,5 +1,5 @@
 \header{named} client \ipaddr#\int( \(\name\))?: (zone transfer|query( \(cache\))?) '\name/[A-Z]+/(CH|IN)' denied$
-\header{named} client \ipaddr#\int( \(\name\))?: transfer of '\name/IN': IXFR ended$
+\header{named} client \ipaddr#\int( \(\name\))?: transfer of '\name/IN': [AI]XFR (started|ended)$
 \header{named} zone \name/IN \(signed\): reconfiguring zone keys$
 \header{named} zone \name/IN \(signed\): sending notifies \(serial \int\)$
 \header{named} zone \name/IN \(signed\): next key event: \dateword \isotime\.\int$

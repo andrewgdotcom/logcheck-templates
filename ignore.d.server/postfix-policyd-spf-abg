@@ -1,1 +1,1 @@
-\header{policyd-spf} (None|Neutral|Pass|Fail|Softfail|Permerror); identity=\name; client-ip=\ipaddr; helo=(\name|\[\ipaddr\]); envelope-from=[^[:space:]]+; receiver=[^[:space:]]+$
+\header{policyd-spf} (None|Neutral|Pass|Fail|Softfail|Temperror|Permerror); identity=\name; client-ip=\ipaddr; helo=(\name|\[\ipaddr\]); envelope-from=[^[:space:]]+; receiver=[^[:space:]]+$
