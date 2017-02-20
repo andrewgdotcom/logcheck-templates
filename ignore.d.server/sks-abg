@@ -56,3 +56,4 @@
 \header{sks} x-forwarded-server:\ipaddr\]\):( Unable to parse hash string:)? Failure\("char out of range for hex conversion"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Failure\("Error while decoding ascii-armored key:  text terminated before reaching PGP public key header line"\)$
 \header{sks} x-forwarded-server:\ipaddr\]\): Sys_error\("Connection reset by peer"\)$
+\header{sks} x-forwarded-server:\ipaddr\]\): 128-bit v3 fingerprints not implemented$
