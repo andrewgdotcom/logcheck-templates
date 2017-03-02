@@ -12,3 +12,5 @@
 \header{sshd} Bad packet length \int\. \[preauth\]$
 \header{sshd} Disconnecting: Packet corrupt \[preauth\]$
 \header{sshd} Accepted publickey for \name from \ipaddr port \int ssh2: DSA \list{:}{\hex}$
+\header{sshd} Received disconnect from \ipaddr: \int: disconnected by user$
+

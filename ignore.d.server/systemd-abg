@@ -2,3 +2,4 @@
 \header{systemd} (St(opp|art)(ing|ed)|Reload(ing|ed)( LSB:)?) .+$
 \header{systemd} PID file \path not readable \(yet\?\) after start\.$
 \header{systemd-logind} New session \int of user \name\.$
+\header{systemd-logind} Removed session \int\.$
