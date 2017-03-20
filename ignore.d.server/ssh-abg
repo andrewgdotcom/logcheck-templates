@@ -13,4 +13,5 @@
 \header{sshd} Disconnecting: Packet corrupt \[preauth\]$
 \header{sshd} Accepted publickey for \name from \ipaddr port \int ssh2: DSA \list{:}{\hex}$
 \header{sshd} Received disconnect from \ipaddr: \int: disconnected by user$
-
+\header{sshd} (fatal: )?Unable to negotiate a key exchange method \[preauth\]$
+\header{sshd} (error: )?Received disconnect from \ipaddr: \int: com.jcraft.jsch.JSchException: Auth fail \[preauth\]$
