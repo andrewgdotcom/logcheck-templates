@@ -7,6 +7,7 @@
 \header{sks} \isodt \int keys (found|received)$
 \header{sks} \isodt Applying \int changes$
 \header{sks} \isodt Reconciliation attempt from <ADDR_INET \[\ipaddr\]:\int> while gossip disabled\. Ignoring\.$
+\header{sks} \isodt Reconciliation attempt from unauthorized host <ADDR_INET \[\ipaddr\]:\int>\. Ignoring\.$
 \header{sks} \isodt Sending LogResp size \int$
 \header{sks} \isodt Added \int hash-updates\. Caught up to \decimal$
 \header{sks} \isodt (Adding|Del'ng) hash [[:xdigit:]]{32}$
