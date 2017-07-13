@@ -17,3 +17,4 @@
 \header{sshd} (error: )?Received disconnect from \ipaddr: \int: com.jcraft.jsch.JSchException: Auth fail \[preauth\]$
 \header{sshd} (Disconnected from|Connection (reset|closed) by) \ipaddr port \int \[preauth\]$
 \header{sshd} (Invalid user \name|Did not receive identification string) from \ipaddr port \int$
+\header{sshd} Disconnecting: Change of username or service not allowed: \(\name,\name\) -> \(\name,\name\) \[preauth\]$

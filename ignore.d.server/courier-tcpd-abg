@@ -16,3 +16,4 @@
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_READ_BYTES:sslv3 alert bad certificate$
 \header{couriertcpd} The TLS connection was non-properly terminated\.$
 \header{couriertcpd} Error in the pull function\.$
+\header{couriertcpd} gdbm fatal: read error$
