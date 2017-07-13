@@ -1,1 +1,2 @@
 \header{rsyslogd[0-9-]+} action 'action 17' (suspended|resumed).*$
+\header{liblogging-stdlog}  \[origin software="rsyslogd" swVersion="\version" x-pid="\int" x-info="\url"\] rsyslogd was HUPed$

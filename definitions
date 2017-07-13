@@ -5,7 +5,10 @@
 \comment{You must escape any character classes that are modified by {}, e.g. @\w{3}}
 
 \comment{Macro expansions are not encapsulated in the resulting regex, so (*+?{}) will not behave as you expect}
-\comment{To use a modifier on a macro, be sure to always enclose it in () first}
+\comment{To use a modifier on a macro, be sure to always enclose it in () first, e.g. (\foo)*}
+
+\define{word}{[[:alnum:]]+}
+\define{words}{\word(\s\word)*}
 
 \comment{\name will cover most fqdns, usernames, services, etc}
 \define{name}{[._[:alnum:]+-]+}
@@ -13,8 +16,11 @@
 \define{ipaddr}{[:[:xdigit:].]{3,39}(%\name)?}
 
 \comment{\email is a sloppy match for common addresses, but is not watertight}
-\comment{It can also match other things such as Message-ID etc.}
+\comment{It can also match similar strings such as Message-ID}
 \define{email}{(("[^\\"]+"|[!#$%^&*~`?{}|._=/+'[:alnum:]-]|\\.)+)@@(\name|\[(IPv6:)?\ipaddr\])}
+
+\comment{and again for URLs}
+\define{url}{(https?|ftps?)://(\name@)?(\name|\ipaddr)(:\int)?(/(\name)?)*}
 
 \define{int}{[[:digit:]]+}
 \define{sint}{[+-]?\int}
@@ -44,7 +50,7 @@
 \define{syslogdt}{@\w{3} [ :[:digit:]]{11}}
 \define{dtstamp}{\syslogdt}
 
-\comment{And finally, a shorthand for syslog's standard boilerplate}
+\comment{A shorthand for syslog's standard boilerplate}
 \define{syslog}{^\syslogdt \name #1(\[\int\])?:}
 \define{header}{\syslog{#1}}
 

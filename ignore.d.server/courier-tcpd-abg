@@ -14,3 +14,5 @@
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_GET_CLIENT_HELLO:(unknown protocol|no shared cipher|http request|unsupported( protocol)?)$
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL_BYTES_TO_CIPHER_LIST:inappropriate fallback$
 \header{couriertcpd} couriertls: (accept|connect): error:\hex:SSL routines:SSL2?3_READ_BYTES:sslv3 alert bad certificate$
+\header{couriertcpd} The TLS connection was non-properly terminated\.$
+\header{couriertcpd} Error in the pull function\.$
