@@ -1,2 +1,2 @@
 \header{policyd-spf} (prepend Received-SPF: )?(None|Neutral|Pass|Fail|Softfail|Temperror|Permerror)(;| \(\words\)) identity=\words; client-ip=\ipaddr; helo=(\name|\[\ipaddr\]); envelope-from=[^[:space:]]+; receiver=[^[:space:]]+$
-(\header{policyd-spf} 550 5.7.23|\header{postfix(-\name)?/smtpd} NOQUEUE: reject: RCPT from \name\[\ipaddr\]: 550 5.7.23 <\email>: Recipient address rejected:) Message rejected due to: [-,.[:alnum:] ]\. Please see http://www\.openspf\.net/Why\?.*$
+(\header{policyd-spf} 550 5.7.23|\header{postfix(-\name)?/smtpd} NOQUEUE: reject: RCPT from \name\[\ipaddr\]: 550 5.7.23 <\email>: Recipient address rejected:) Message rejected due to: [-,.[:alnum:] ]+\. Please see http://www\.openspf\.net/Why\?.*$
