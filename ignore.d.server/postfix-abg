@@ -14,4 +14,4 @@
 \header{postfix/cleanup} \hex: message-id=\[string\].*\[/string\]$
 \header{postfix(-\name)?/smtpd} NOQUEUE: reject: MAIL from \name\[\ipaddr\]: 552 5\.3\.4 Message size exceeds fixed limit; proto=ESMTP helo=<\name>$
 \header{postfix/smtp} connect to \name\[\ipaddr\]:\int: Permission denied$
-\header{postfix(-\name)?/smtpd} disconnect from \name\[(unknown|\ipaddr)\] ((helo|ehlo|starttls|auth|mail|rcpt|data|rset|quit|unknown)=\int(/\int)? )*commands=\int(/\int)?$
+\header{postfix(-\name)?/smtpd} disconnect from \name\[(unknown|\ipaddr)\] (\word=\int(/\int)? )*commands=\int(/\int)?$
