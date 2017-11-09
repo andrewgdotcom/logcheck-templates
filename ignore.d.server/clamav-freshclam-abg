@@ -5,3 +5,4 @@
 \header{freshclam} Can't connect to port 80 of host db.local.clamav.net \(IP: 172.110.204.67\)$
 \header{freshclam} Trying host \name \(\ipaddr\)\.\.\.$
 \header{freshclam} WARNING.*$
+\header{freshclam} Reading CVD header \(.*\): OK$

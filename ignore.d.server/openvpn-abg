@@ -1,5 +1,5 @@
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr)? Connection reset, restarting \[\sint\]$
-\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? (PUSH: Received control message|SENT CONTROL \[\name\]): 'PUSH_REPLY,route \ipaddr \ipaddr,(topology \name,)?ping \int,ping-restart \int,ifconfig \ipaddr \ipaddr' \(status=1\)$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? (PUSH: Received control message|SENT CONTROL \[\name\]): 'PUSH_REPLY,(tun-ipv6,)?route \ipaddr \ipaddr,(topology \name,)?ping \int,ping-restart \int,ifconfig \ipaddr \ipaddr' \(status=1\)$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? (PUSH: Received control message|SENT CONTROL \[\name\]): 'PUSH_REPLY,ifconfig-ipv6 \ipaddr(/\int)? \ipaddr,tun-ipv6,route \ipaddr \ipaddr,(topology \name,)?ping \int,ping-restart \int,ifconfig \ipaddr \ipaddr' \(status=1\)$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? MULTI: multi_create_instance called$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? MULTI: new connection by client '\name' will cause previous active sessions by this client to be dropped.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect.$
@@ -29,7 +29,7 @@
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? MULTI_sva: pool returned IPv4=\ipaddr, IPv6=\ipaddr$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? send_push_reply\(\): safe_cap=\int$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? WARNING: 'tun-ipv6' is present in local config but missing in remote config, local='tun-ipv6'$
-\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? TLS: soft reset sec=\sint bytes=\int/\int pkts=\int/\int$
+\header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? TLS: soft reset sec=\sint bytes=\int/\sint pkts=\int/\int$
 \header{(openvpn|ovpn-\name)}( (\name/)?\ipaddr(:\int)?( \[\name\])?)? TLS: tls_process: killed expiring key$
 \header{(openvpn|ovpn-\name)} Socket Buffers: R=\[\int->\int\] S=\[\int->\int\]
 \header{(openvpn|ovpn-\name)} \ipaddr:\int WARNING: Bad encapsulated packet length from peer \(\int\), which must be > 0 and <= \int -- please ensure that --tun-mtu or --link-mtu is equal on both peers -- this condition could also indicate a possible active attack on the TCP link -- \[Attempting restart\.\.\.\]
