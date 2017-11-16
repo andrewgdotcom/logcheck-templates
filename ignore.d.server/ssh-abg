@@ -18,4 +18,4 @@
 \header{sshd} (Disconnected from|Connection (reset|closed) by) \ipaddr port \int \[preauth\]$
 \header{sshd} (Invalid user \name|Did not receive identification string) from \ipaddr port \int$
 \header{sshd} Disconnecting: Change of username or service not allowed: \(\name,\name\) -> \(\name,\name\) \[preauth\]$
-\header{sshd} Unable to negotiate with \ipaddr port \int: no matching key exchange method found. Their offer: diffie-helman-group1-sha1 \[preauth\]$
+\header{sshd} Unable to negotiate with \ipaddr port \int: no matching key exchange method found. Their offer: \name \[preauth\]$
